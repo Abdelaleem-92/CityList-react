@@ -28,14 +28,17 @@ const MainComponent = () => {
     }
 
     const getFilteredData = (cities, searchValue) => {
-        const filteredData = cities.filter(city => {
-            if (city.name.includes(searchValue)) {
-                return true;
-            } else {
-                return false;
-            }
-        });
-        return filteredData;
+        if(cities){
+            const filteredData = cities.filter(city => {
+                if (city.name.includes(searchValue)) {
+                    return true;
+                } else {
+                    return false;
+                }
+            });
+            return filteredData;
+        }
+        
     }
 
     const handleSearchInputChange = (e => {
