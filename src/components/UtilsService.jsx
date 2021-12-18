@@ -1,5 +1,3 @@
-import React from 'react'
-
 const getAllCitiesUrl = 'http://localhost:8080/api/cityList/allCities';
 const signinUrl = 'http://localhost:8080/api/auth/signin';
 const editCityUrl = 'http://localhost:8080/api/cityList/editCity/';
