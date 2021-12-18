@@ -57,15 +57,12 @@ const MainComponent = () => {
     })
 
     const showCitiesData = () => {
-        console.log('showCitiesData fetchStatus :: ' + fetchStatus)
         if (fetchStatus.length == 0) {
-            console.log('showCitiesData fetchStatus == 0 ::: ' + fetchStatus)
             return (
                 <div className="dataFetchLoading"><span >Loading Cities Data...</span>  </div>
             )
         } else
             if (fetchStatus == 'success') {
-                console.log('showCitiesData fetchStatus == success :: ' + fetchStatus)
                 return (
                     <PaginationComponent
                         data={filteredCities} RenderComponent={CityComponent} title="City List" pageLimit={10} dataLimit={50}
@@ -74,7 +71,6 @@ const MainComponent = () => {
                 )
 
             } else {
-                console.log('showCitiesData fetchStatus else else  :: ' + fetchStatus)
                 return (
                     <div className="dataFetchFailure"><span >Failed to load Cities 😟</span>  </div>
                 )

@@ -19,6 +19,7 @@ const CityComponent = (props) => {
                 if (status) {
                     setTimeout(function () {
                         props.reloadCities();
+                        setShowEditCity(!showEditCity);
                         alert("updated successfully")
                     }, 500)
                 }
