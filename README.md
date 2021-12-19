@@ -1,3 +1,40 @@
+# City List Client Application
+
+this is Java spring that presents API for City List, 
+
+## Technologies
+Project is created with:
+* React.
+
+
+## Installation 
+
+* Application can be easily start and be running by docker 
+below are the steps to run through docker   
+prerequisite  docker engine to be installed and running
+
+to be started as a docker image 
+first you will need to clone the repository then locate into the project path 
+cloning the git repository
+```bash
+ - git clone https://github.com/Abdelaleem-92/cityList_client.git 
+``` 
+
+* build docker image
+```bash
+ docker build -t citylist:citylist_client .
+``` 
+
+run docker container 
+```bash
+docker run -p 3000:3000 citylist:citylist_client
+``` 
+
+to open the application  url :   http://localhost:3000/
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
